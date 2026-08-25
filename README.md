@@ -9,27 +9,100 @@ The function was defined as follows:
 def rotate_word(text):
     text[1:]+text[0]
 ```
-This function utilizes string slicing and string concatenation. In which text[1:] refers to getting all the characters starting from the second character, while text[0] gets the first character. Once the function is executed, these two are combined, making the first character appear at the end of all the remaining characters while retaining its capitalization. 
+This function utilizes string slicing. In which text[1:] refers to getting all the characters starting from the second character, while text[0] gets the first character. Once the function is executed, these two are combined, making the first character appear at the end of all the remaining characters while retaining its capitalization. 
 ## Example Given:
+Example A1:
 ```python
 rotate_word("Miguel")
 ```
+Returns:
 ```python
 "iguelM"
 ```
+Example A2:
 ```python
 rotate_word("eLectronics")
 ```
+Returns:
 ```python
 "Lectronicse"
 ```
+Example A3:
 ```python
 rotate_word("coffee")
 ```
-# B. Username Builder Problem
-## OBJECTIVE
-
+Returns:
 ```python
 "offeec"
 ```
+# B. Username Builder Problem
+## OBJECTIVE
+The objective of this problem is to create a function that is able to generate a username using a person's first and last name. Combining these two unique names while converting it to lowercase and separating them with a period. 
+## DISCUSSIONS OF METHODS AND FUNCTIONS:
+The functions was defined as follows:
+```python
+def make_username(firstname, lastname):
+    firstname.lower()
+    lastname.lower()
+    return firstname.lower() + "." + lastname.lower()
+```
+The function utilizes string concatenation in order to combine the two lowercase names with a period in between them. The lower() is used in order to convert the names into lowercase characters. 
+## Examples Given:
+Example B1:
+```python
+make_username("Miguel", "Carino")
+```
+Returns:
+```python
+"miguel.carino"
+```
+Example B2:
+```python
+make_username("Tony", "Stark")
+```
+Returns:
+```python
+"tony.stark"
+```
+# C. Bookend Swap Problem
+## OBJECTIVE
+The objective of this problem is to create a function that is able to swap the first and last elements of a sequence while keeping all the elements in between in their original order. 
+## DISCUSSION OF METHODS AND FUNCTIONS:
+The function was defined as follows:
+```python
+def swap_bookends(item):
+    first, *middle, last = item
+    first = item(0)
+    middle = item[1:-1]
+    last = item[-1]
+    return [last] + [*middle] + [first]
+```
+The function utilizes extended sequence unpacking in which *middle unpacks multiple element placed as the middle variable throughout the sequence. The first and last elements are identified using item[0] and item[-1], while item[1:-1] obtains all the elements between them. Once executed the function then returns the list in which the first and last elements are swapped while the middle elements retain it's order. 
+## Examples Given:
+Example C1:
+```python
+swap_bookends([1, 2, 3, 4, 5, 6,])
+```
+Returns:
+```python
+[6, 2, 3, 4, 5, 1]
+```
+Example C2:
+```python
+swap_bookends([1, 9])
+```
+Returns:
+```python
+[9, 1]
+```
+Example C3:
+```python
+swap_bookends(["Kimi", "Lewis", "Max"])
+```
+Returns:
+```python
+["Max", "Lewis", "Kimi"]
+```
+
+
 
