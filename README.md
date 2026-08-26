@@ -10,7 +10,7 @@ def rotate_word(text):
     text[1:]+text[0]
 ```
 This function utilizes string slicing. In which text[1:] refers to getting all the characters starting from the second character, while text[0] gets the first character. Once the function is executed, these two are combined, making the first character appear at the end of all the remaining characters while retaining its capitalization. 
-## Example Given:
+## Examples Given:
 Example A1:
 ```python
 rotate_word("python")
