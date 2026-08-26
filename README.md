@@ -13,27 +13,35 @@ This function utilizes string slicing. In which text[1:] refers to getting all t
 ## Example Given:
 Example A1:
 ```python
-rotate_word("Miguel")
+rotate_word("python")
 ```
 Returns:
 ```python
-"iguelM"
+"ythonp"
 ```
 Example A2:
 ```python
-rotate_word("eLectronics")
+rotate_word("logic")
 ```
 Returns:
 ```python
-"Lectronicse"
+"ogicl"
 ```
 Example A3:
 ```python
-rotate_word("coffee")
+rotate_word("Code")
 ```
 Returns:
 ```python
-"offeec"
+"odeC"
+```
+Example A4:
+```python
+rotate_word("A")
+```
+Returns:
+```python
+"A"
 ```
 # B. Username Builder Problem
 ## OBJECTIVE
@@ -48,19 +56,27 @@ The function utilizes string concatenation in order to combine the two lowercase
 ## Examples Given:
 Example B1:
 ```python
-make_username("Miguel", "Carino")
+make_username("Ada", "Lovelace")
 ```
 Returns:
 ```python
-"miguel.carino"
+"ada.lovelace"
 ```
 Example B2:
 ```python
-make_username("Tony", "Stark")
+make_username("Alan", "Turing")
 ```
 Returns:
 ```python
-"tony.stark"
+"alan.turing"
+```
+Example B3:
+```python
+make_username("Ana Maria", "De Leon")
+```
+Returns:
+```python
+"anamaria.deleon"
 ```
 # C. Bookend Swap Problem
 ## OBJECTIVE
@@ -87,19 +103,19 @@ Returns:
 ```
 Example C2:
 ```python
-swap_bookends([1, 9])
+swap_bookends(["red", "green", "blue"])
 ```
 Returns:
 ```python
-[9, 1]
+["blue", "green", "blue"]
 ```
 Example C3:
 ```python
-swap_bookends(["Kimi", "Lewis", "Max"])
+swap_bookends([8, 3])
 ```
 Returns:
 ```python
-["Max", "Lewis", "Kimi"]
+[3, 8]
 ```
 
 
