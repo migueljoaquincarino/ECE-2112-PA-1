@@ -42,11 +42,9 @@ The objective of this problem is to create a function that is able to generate a
 The functions was defined as follows:
 ```python
 def make_username(firstname, lastname):
-    firstname.lower()
-    lastname.lower()
-    return firstname.lower() + "." + lastname.lower()
+    return firstname.lower().replace(" ", "") + "." + lastname.lower().replace(" ", "")
 ```
-The function utilizes string concatenation in order to combine the two lowercase names with a period in between them. The lower() is used in order to convert the names into lowercase characters. 
+The function utilizes string concatenation in order to combine the two lowercase names with a period in between them. The lower() is used in order to convert the names into lowercase characters. Which is then followed by .replace(" ", "") in order to remove the spaces in the names. 
 ## Examples Given:
 Example B1:
 ```python
