@@ -88,7 +88,7 @@ def swap_bookends(item):
     first, *middle, last = item
     return [last] + [*middle] + [first]
 ```
-The function utilizes extended sequence unpacking in which *middle unpacks multiple element placed as the middle variable throughout the sequence. The first and last elements are identified using item[0] and item[-1], while item[1:-1] obtains all the elements between them. Once executed the function then returns the list in which the first and last elements are swapped while the middle elements retain it's order. 
+The function utilizes extended sequence unpacking in which *middle unpacks multiple element placed as the middle variable throughout the sequence. Once executed the function then returns the list in which the first and last elements are swapped while the middle elements retain it's order. 
 ## Examples Given:
 Example C1:
 ```python
@@ -121,6 +121,8 @@ August 24, 2026 - Initial Commit
 August 26, 2026 - Updated Readme and Code
 
 August 27, 2026 - Finalized Readme and Code
+
+August 28, 2026 - Updated Readme
 
 
 
