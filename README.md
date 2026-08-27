@@ -116,8 +116,10 @@ Returns:
 ```
 
 ## History
-August 24, 2026 - Initial Commit 
+August 24, 2026 - Initial Commit
+
 August 26, 2026 - Updated Readme and Code
+
 August 27, 2026 - Finalized Readme and Code
 
 
